@@ -1,0 +1,338 @@
+/*---------------------------------------------------
+	widget styles
+----------------------------------------------------*/
+.widget-title {
+  position: relative;
+  font-size: 20px;
+}
+.td-sidebar .widget {
+  margin-bottom: 34px;
+  padding: 30px;
+  border-radius: 4px;
+  border: 1px solid #ededed;
+  .widget-title {
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 8px;
+    color: var(--main-color);
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      height: 3px;
+      width: 100%;
+      background: #e1e1e1;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      height: 3px;
+      width: 60px;
+      background: var(--main-color);
+      z-index: 2;
+    }
+  }
+  &.widget-recent-post ul li .media {
+    box-shadow: $box-shadow;
+    padding: 15px 20px;
+    border-radius: 5px;
+  }
+}
+.footer-area {
+  .widget-title {
+    color: #fff;
+  }
+}
+
+.td-sidebar-service .widget {
+  margin-bottom: 34px;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  .widget-title {
+    &:before {
+      display: none;
+    }
+    &:after {
+      border-bottom: 1px dashed var(--main-color);
+      background: transparent;
+      width: 156px;
+    }
+  }
+}
+
+
+//widget-tags
+.widget_tag_cloud .tagcloud a {
+  background: #f4f6f9;
+  height: 36px;
+  line-height: 34px;
+  padding: 0 18px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 5px 9px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #909090;
+  border: 1px solid rgba(66, 74, 97, 0.1);
+  i {
+    float: right;
+    padding-top: 5px;
+  }
+}
+.widget_tag_cloud .tagcloud a:hover {
+  background: var(--main-color);
+  color: #ffffff;
+  border-color: var(--main-color);
+}
+
+/*********** widget_checkbox_list ************/
+.widget_checkbox_list {
+  .single-checkbox:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+.single-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--heading-color);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom: 1px solid #e3e3e3;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ .checkmark {
+      background-color: var(--main-color);
+    }
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eae1d6;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 8px;
+      top: 4px;
+      width: 5px;
+      height: 10px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+
+
+/******** widget-contact *********/
+.widget_contact {
+  .details {
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      position: relative;
+      list-style: none;
+      i {
+        margin-right: 14px;
+        color: var(--main-color);
+      }
+      svg {
+        margin-right: 14px;
+        color: var(--main-color);
+        &.sky {
+          color: #50af9b;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .time {
+        font-size: 12px;
+        margin-top: 3px;
+      }
+    }
+  }
+  .social-media {
+    li {
+      a {
+        border: 1px solid var(--paragraph-color);
+        background: transparent;
+        line-height: 28px;
+        svg {
+          margin-right: 0;
+          transition: 0.4s;
+        }
+        &:hover {
+          background: var(--main-color);
+          border: 1px solid var(--main-color);
+          svg {
+            color: #fff !important;
+          }
+        }
+        &.sky {
+          &:hover {
+            background: #50af9b;
+            border: 1px solid #50af9b;
+            svg {
+              color: #fff !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.widget_instagram {
+  .instagram-wrap {
+    margin: 0 10px;
+    .thumb {
+      margin-bottom: 10px;
+      position: relative;
+      border-radius: 6px;
+      overflow: hidden;
+      cursor: pointer;
+      img {
+        transform: scale(1.05);
+        transition: 0.9s;
+      }
+      &:after {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.4s;
+      }
+      i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: rgba(253, 74, 54, 0.7);
+        display: inline-block;
+        z-index: 3;
+        color: #fff;
+        border-radius: 50%;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.4s;
+      }
+      &:hover {
+        &:after {
+          visibility: visible;
+          opacity: 1;
+        }
+        i {
+          visibility: visible;
+          opacity: 1;
+        }
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+
+
+.widget-info-inner {
+  h6 {
+    margin-bottom: 4px;
+  }
+  p {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.service-sidebar {
+  .widget {
+    background: #f8f9fc;
+    border: 0;
+    .widget-title {
+      padding-bottom: 0;
+      svg {
+        margin-top: 6px;
+        float: left;
+        margin-right: 10px;
+        font-size: 15px;
+      }
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+  
+  .widget_download {
+    ul {
+      padding: 8px 0;
+      background: #fff;
+      border-radius: 5px;
+      li {
+        list-style: none;
+        a {
+          padding: 10px 18px;
+          display: block;
+          svg {
+            height: 30px;
+            width: 30px;
+            background: rgba(36, 107, 253, 0.1);
+            color: var(--main-color);
+            border-radius: 50%;
+            line-height: 30px;
+            text-align: center;
+            padding: 8px;
+            float: right;
+            transition: 0.4s;
+          }
+          &:hover {
+            svg {
+              background: var(--main-color);
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

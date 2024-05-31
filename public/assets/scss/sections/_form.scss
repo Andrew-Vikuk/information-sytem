@@ -1,0 +1,169 @@
+/*----------------------------------------------
+    # FORMS
+----------------------------------------------*/
+
+
+.mfp-zoom-in .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7); }
+.mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+.mfp-zoom-in.mfp-ready .mfp-content {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+.mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.7; }
+    .mfp-zoom-in.mfp-removing .mfp-content {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0; }
+.mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0; }
+
+
+
+/************ single-inpur-inner ************/
+.single-input-inner {
+    margin-bottom: 20px;
+    input {
+        width: 100%;
+        height: 50px;
+        border: 0 !important;
+        padding: 0 18px;
+        border-radius: 6px;
+        font-weight: 300;
+        &::placeholder {
+            color: #adadad;
+        }
+    }
+    textarea {
+        width: 100%;
+        border: 0 !important;
+        height: 140px;
+        border-radius: 6px;
+        padding: 14px 18px;
+        font-weight: 300;
+        &::placeholder {
+            color: #adadad;
+        }
+    }
+    .single-select {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border: 0 !important;
+        border-radius: 6px;
+        padding: 0 18px;
+        margin-bottom: 20px;
+        .list {
+            width: 100%;
+        }
+    }
+    &.style-border {
+        input {
+            border: 1px solid rgba(234, 225, 214, 0.7) !important;
+            &::placeholder {
+                color: #adadad;
+            }
+        }
+        textarea {
+            border: 1px solid rgba(234, 225, 214, 0.7) !important;
+            background: transparent;
+            &::placeholder {
+                color: #adadad;
+            }
+        }
+        .single-select {
+            border: 1px solid rgba(234, 225, 214, 0.7) !important;
+            color: #adadad;
+        }
+    }
+    &.style-border-bottom {
+        input {
+            border-bottom: 1px solid rgba(234, 225, 214, 0.7) !important;
+            background: transparent;
+            padding: 0;
+            &::placeholder {
+                color: #adadad;
+            }
+        }
+        textarea {
+            border-bottom: 1px solid rgba(234, 225, 214, 0.7) !important;
+            &::placeholder {
+                color: #adadad;
+            }
+        }
+        .single-select {
+            border-bottom: 1px solid rgba(234, 225, 214, 0.7) !important;
+            background: transparent;
+            color: #adadad;
+        }
+    }
+    &.style-bg {
+        input {
+            background: #F7FAFC;
+            &::placeholder {
+                color: #3F517E;
+            }
+        }
+        textarea {
+            background: #F7FAFC;
+            &::placeholder {
+                color: #3F517E;
+            }
+        }
+        .single-select {
+            background: #F7FAFC;
+            color: #3F517E;
+        }
+    }
+    &.style-bg-none {
+        input {
+            background: transparent;
+            color: #fff;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        textarea {
+            background: transparent;
+            color: #fff;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        .single-select {
+            background: transparent;
+            color: #fff;
+        }
+    }
+}
+
+
+.contact-form-inner {
+    padding: 0 30px 30px;
+    border-radius: 7px;
+    overflow: hidden;
+    background-size: cover;
+    .single-input-inner.style-border-bottom {
+        input {
+            border-bottom: 1px solid #fff !important;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    }
+}

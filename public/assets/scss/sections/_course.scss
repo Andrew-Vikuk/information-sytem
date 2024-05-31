@@ -1,0 +1,77 @@
+/*----------------------------------------------
+    # Course style
+----------------------------------------------*/
+.single-service-inner {
+  height: 93%;
+  background: #fff;
+  padding: 40px 35px;
+  margin-bottom: 30px;
+  border-radius: 24px;
+  transition: 0.5s;
+  box-shadow: 0px 4px 20px rgba(19, 16, 34, 0.06);
+  .thumb {
+    margin-bottom: 35px;
+    transition: 0.5s;
+    img {
+      transition: 0.5s;
+    }
+  }
+
+  .details {
+    h5 {
+      margin-bottom: 20px;
+      position: relative;
+      transition: 0.4s;
+    }
+    p {
+      margin-bottom: 28px;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(19, 16, 34, 0.1);
+    .thumb {
+      img {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+  &.style-3 {
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 35px;
+    .thumb {
+      height: 100px;
+      width: 100px;
+      line-height: 96px;
+      border-radius: 50%;
+      border: 1px solid #e3e3e3;
+      text-align: center;
+      margin-top: -82px;
+      background: #fff;
+    }
+    .details {
+      h5 {
+        font-size: 22px;
+      }
+    }
+    &:hover {
+      .thumb {
+        border: 1px solid var(--main-color);
+      }
+    }
+  }
+}
+
+.bg-blue-right {
+  background: rgba(80, 175, 155, 0.1);
+}
+.service-middle-section {
+  padding: 30px 30px 0 30px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+

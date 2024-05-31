@@ -1,0 +1,55 @@
+.faq-area-margin-top {
+  margin-top: 0px;
+  padding-top: 0px;;
+}
+
+.contact-inner-1 {
+  margin-top: -120px;
+  position: relative;
+  z-index: 2;
+  .animate-img-1 {
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    z-index: -1;
+  }
+  .animate-img-2 {
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+  }
+  .section-title {
+    background: #fff;
+    padding: 50px;
+    margin-left: -190px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    .title {
+      font-size: 35px;
+    }
+  }
+}
+
+.contact-page-list {
+  margin-bottom: -110px;
+  position: relative;
+}
+.contact-page-inner {
+  padding: 100px;
+  border-radius: 10px;
+}
+
+.contact-g-map {
+  margin-bottom: -100px;
+  iframe {
+    width: 100%;
+    height: 550px;
+  }
+}
+
+.about-area-margin-bottom {
+  position: relative;
+  margin-bottom: -120px;
+  z-index: 2;
+}
