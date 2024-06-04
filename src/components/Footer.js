@@ -80,7 +80,7 @@ const Footer = () => {
           <div className='container'>
             <div className='row'>
               <div className='col-md-6 align-self-center'>
-                <p>© Навчальний Веб-портал УЖНУ 2024</p>
+                <p>© Навчальний веб-портал ІУСТ 2024</p>
               </div>
             </div>
           </div>

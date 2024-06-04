@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPlus } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const CoursesAreaCategories = () => {
   return (
@@ -27,10 +28,10 @@ const CoursesAreaCategories = () => {
                   </div>
                   <div className='details'>
                     <h5>
-                      <Link to='/courses'>HTML</Link>
+                      <Link to='courses#html'>HTML</Link>
                     </h5>
                     <p>HTML (HyperText Markup Language) - це мова розмітки, яка використовується для створення структурованого вмісту веб-сторінок.</p>
-                    <Link className='btn btn-border-base' to='/courses'>
+                    <Link className='btn btn-border-base' to='courses#html'>
                       Всі Курси <FaPlus />
                     </Link>
                   </div>
@@ -45,10 +46,10 @@ const CoursesAreaCategories = () => {
                   </div>
                   <div className='details'>
                     <h5>
-                      <Link to='/courses'>CSS</Link>
+                      <Link to='courses#css'>CSS</Link>
                     </h5>
                     <p>CSS (Cascading Style Sheets) - це мова стилів, що використовується для опису вигляду HTML-документів.</p>
-                    <Link className='btn btn-border-base' to='/courses'>
+                    <Link className='btn btn-border-base' to='courses#css'>
                     Всі Курси <FaPlus />
                     </Link>
                   </div>
@@ -65,10 +66,10 @@ const CoursesAreaCategories = () => {
                   </div>
                   <div className='details'>
                     <h5>
-                      <Link to='/courses'>Java Script</Link>
+                      <Link to='courses#java-script'>Java Script</Link>
                     </h5>
                     <p>JavaScript - це високорівнева, інтерпретована мова програмування, яка використовується для створення інтерактивних елементів на веб-сторінках.</p>
-                    <Link className='btn btn-border-base' to='/courses'>
+                    <Link className='btn btn-border-base' to='courses#java-script'>
                     Всі Курси <FaPlus />
                     </Link>
                   </div>
@@ -83,10 +84,10 @@ const CoursesAreaCategories = () => {
                   </div>
                   <div className='details'>
                     <h5>
-                      <Link to='/courses'>React JS</Link>
+                      <Link to='courses#react'>React JS</Link>
                     </h5>
                     <p>ReactJS - це бібліотека JavaScript для побудови інтерфейсів користувача, яка дозволяє створювати змінні та переважно динамічні UI-компоненти.</p>
-                    <Link className='btn btn-border-base' to='/courses'>
+                    <Link className='btn btn-border-base' to='courses#react'>
                     Всі Курси <FaPlus />
                     </Link>
                   </div>

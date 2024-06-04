@@ -6,6 +6,8 @@ import Courses from "./pages/Courses";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import StickyBox from "react-sticky-box";
+import { HashLink as Link } from 'react-router-hash-link';
+
 import { useEffect } from "react";
 import ScrollToTop from "./scripts/scrollToTop";
 import CourseSingleHtml1 from "./pages/CourseSingleHtml1";
