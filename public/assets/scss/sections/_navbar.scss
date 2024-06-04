@@ -61,9 +61,11 @@
 }
 
 .navbar-area {
-  position: relative;
+  position: fixed;
+  top: 5px;
+  width: 100%;
   z-index: 99;
-  margin-top: 20px;
+  margin-top: 5px;
   .nav-container {
     transition: all 0.4s;
     position: relative;
