@@ -8,7 +8,7 @@ import NavBar from "../components/NavBar";
 import CoursesAreaCategories from "../components/CoursesAreaCategories";
 
 
-const HomeOne = () => {
+const Home = () => {
   return (
     <>
       {/* Navigation Bar */}
@@ -35,4 +35,4 @@ const HomeOne = () => {
   );
 };
 
-export default HomeOne;
+export default Home;

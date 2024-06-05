@@ -11,7 +11,7 @@ import NavBar from "../components/NavBar";
 const About = () => {
   return (
     <>
-      {/* Navigation Bar test*/}
+      {/* Navigation Bar */}
       <NavBar />
 
       {/* Navigation Bar */}
