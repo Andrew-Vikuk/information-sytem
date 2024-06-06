@@ -16,12 +16,12 @@ const Breadcrumb = ({ title }) => {
                 <h2 className='page-title'>{title}</h2>
               </div>
               <div className='col-lg-6 text-lg-end'>
-                <ul className='page-list'>
+                {/* <ul className='page-list'>
                   <li>
                     <Link to='/'>Головна</Link>
                   </li>
                   {"  "}/ <li>{title}</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>

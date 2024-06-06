@@ -11,7 +11,7 @@ const CourseSingleHtml1 = () => {
       <NavBar />
 
       {/* Navigation Bar */}
-      <Breadcrumb title={"Основи HTML: Поглиблене вивчення"} />
+      <Breadcrumb title={"Основи HTML"} />
 
       {/* Course Page */}
       <CourseHtml1 />

@@ -1,6 +1,6 @@
 let courseListHTML = [
   {
-    title: "Основи HTML: Поглиблене вивчення",
+    title: "Основи HTML",
     des: "HTML (HyperText Markup Language) - це мова розмітки, яка використовується для створення структурованого вмісту веб-сторінок. Дозволяє визначати елементи сторінки та їх відношення між собою.",
     img: "assets/img/about/html-icon_2.png",
     link: "/html-basics/#course-single",
