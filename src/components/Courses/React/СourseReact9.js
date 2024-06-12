@@ -2,7 +2,7 @@ import React from "react";
 import {
   FaArrowRight,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import courseListReact from "../../../scripts/CoursesListReact";
 
 const CourseReact9 = () => {
@@ -15,9 +15,12 @@ const CourseReact9 = () => {
             <div className='col-lg-4 col-12'>
                 <div className='td-sidebar service-sidebar'>
                     <div className='widget widget_catagory'>
-                        <h5 className='widget-title'>
-                            <FaArrowRight /> Інші уроки ReactJS
-                        </h5>
+                        <Link className='btn btn-border-base' to='/courses#react'>
+                      Назад до курсів
+                    </Link>
+                  <h5 className='widget-title mt-4 mb-2'>
+                    Уроки по React JS
+                  </h5>
                         <ul className='catagory-items'>
                             {courseListReact.map((data, index) => (
                                 <div key={index}>
