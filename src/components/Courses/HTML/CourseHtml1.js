@@ -4,8 +4,9 @@ import {
   FaArrowRight,
   FaCheckCircle,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import courseListHTML from "../../../scripts/CoursesListHTML";
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const CourseHtml1 = () => {
   return (
@@ -17,8 +18,11 @@ const CourseHtml1 = () => {
             <div className='col-lg-4 col-12'>
               <div className='td-sidebar service-sidebar'>
                 <div className='widget widget_catagory'>
-                  <h5 className='widget-title'>
-                    <FaArrowRight /> Інші Уроки по HTML
+                  <Link className='btn btn-border-base' to='/courses#html'>
+                      Назад до курсів
+                    </Link>
+                  <h5 className='widget-title mt-4 mb-2'>
+                    Уроки по HTML
                   </h5>
                   <ul className='catagory-items'>
                   {courseListHTML.map((data, index) => (
@@ -32,7 +36,7 @@ const CourseHtml1 = () => {
                 </div>
                 <div className='widget widget_author text-center'>
                   <div className='thumb'>
-                    <img src='../assets/img/about/main_1.png' alt='img' className='service-banner-image' />
+                    <img src='/assets/img/about/main_1.png' alt='img' className='service-banner-image' />
                   </div>
                   <div className='details'>
                   <Link className='btn btn-border-base' to='/about'>
@@ -47,7 +51,7 @@ const CourseHtml1 = () => {
               <div className='blog-details-page-content'>
                 <div className='single-blog-inner mb-0'>
                   <div className='thumb'>
-                    <img src='assets/img/service/html_cat.jpg' alt='img' className="w-100 h-20"  style={{height: "300px", objectFit: "cover", marginBottom: "20px"}}/>
+                    <img src='/assets/img/service/html_cat.jpg' alt='img' className="w-100 h-20"  style={{height: "300px", objectFit: "cover", marginBottom: "20px"}}/>
                   </div>
                   <div className='details'>
 

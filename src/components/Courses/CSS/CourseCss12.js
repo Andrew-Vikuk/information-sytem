@@ -4,7 +4,7 @@ import {
   FaArrowRight,
   FaCheckCircle,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import courseListCSS from "../../../scripts/CoursesListCSS";
 
 
@@ -18,8 +18,11 @@ const CourseCss12 = () => {
             <div className='col-lg-4 col-12'>
               <div className='td-sidebar service-sidebar'>
                 <div className='widget widget_catagory'>
-                  <h5 className='widget-title'>
-                    <FaArrowRight /> Інші Уроки по CSS
+                  <Link className='btn btn-border-base' to='/courses#css'>
+                      Назад до курсів
+                    </Link>
+                  <h5 className='widget-title mt-4 mb-2'>
+                    Уроки по CSS
                   </h5>
                   <ul className='catagory-items'>
                   {courseListCSS.map((data, index) => (
