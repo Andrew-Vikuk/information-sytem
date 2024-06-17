@@ -6,6 +6,8 @@ import {
 } from "react-icons/fa";
 import { HashLink as Link } from 'react-router-hash-link';
 import courseListCSS from "../../../scripts/CoursesListCSS";
+import { NavLink } from "react-router-dom";
+
 
 
 const CourseCss4 = () => {
@@ -28,7 +30,9 @@ const CourseCss4 = () => {
                   {courseListCSS.map((data, index) => (
                     <div key={index}>
                       <li>
-                            <Link to={data.link}>{data.title}</Link>
+                            <NavLink to={data.link}  className={({ isActive, isPending }) =>
+                              isPending ? "pending" : isActive ? "active" : ""
+                            }>{data.title}</NavLink>
                         </li>
                     </div>
                   ))}

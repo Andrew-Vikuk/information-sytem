@@ -4,6 +4,8 @@ import {
 } from "react-icons/fa";
 import { HashLink as Link } from 'react-router-hash-link';
 import courseListReact from "../../../scripts/CoursesListReact";
+import { NavLink } from "react-router-dom";
+
 
 const CourseReact21 = () => {
   return (
@@ -25,8 +27,10 @@ const CourseReact21 = () => {
                            {courseListReact.map((data, index) => (
                                 <div key={index}>
                                     <li>
-                                        <Link to={data.link}>{data.title}</Link>
-                                    </li>
+                            <NavLink to={data.link}  className={({ isActive, isPending }) =>
+                              isPending ? "pending" : isActive ? "active" : ""
+                            }>{data.title}</NavLink>
+                        </li>
                                 </div>
                             ))}
                         </ul>
