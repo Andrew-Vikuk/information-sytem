@@ -20,6 +20,12 @@ import CourseSingleHtml9 from "./pages/CourseSingleHtml9";
 import CourseSingleHtml10 from "./pages/CourseSingleHtml10";
 import CourseSingleHtml11 from "./pages/CourseSingleHtml11";
 import CourseSingleHtml12 from "./pages/CourseSingleHtml12";
+import CourseSingleHtml13 from "./pages/CourseSingleHtml13";
+import CourseSingleHtml14 from "./pages/CourseSingleHtml14";
+import CourseSingleHtml15 from "./pages/CourseSingleHtml15";
+import CourseSingleHtml16 from "./pages/CourseSingleHtml16";
+import CourseSingleHtml17 from "./pages/CourseSingleHtml17";
+import CourseSingleHtml18 from "./pages/CourseSingleHtml18";
 
 import CourseSingleCss1 from "./pages/CourseSingleCss1";
 import CourseSingleCss2 from "./pages/CourseSingleCss2";
@@ -100,6 +106,13 @@ function App() {
         <Route exact path='/html-id' element={<CourseSingleHtml10 />} />
         <Route exact path='/html-iframe' element={<CourseSingleHtml11 />} />
         <Route exact path='/html-path' element={<CourseSingleHtml12 />} />
+        <Route exact path='/html-head' element={<CourseSingleHtml13 />} />
+        <Route exact path='/html-maket' element={<CourseSingleHtml14 />} />
+        <Route exact path='/html-responsive' element={<CourseSingleHtml15 />} />
+        <Route exact path='/html-sut' element={<CourseSingleHtml16 />} />
+        <Route exact path='/html-emoji' element={<CourseSingleHtml17 />} />
+        <Route exact path='/html-url' element={<CourseSingleHtml18 />} />
+
 
         {/* CSS */}
         <Route exact path='/css-basics' element={<CourseSingleCss1 />} />

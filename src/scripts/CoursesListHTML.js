@@ -71,6 +71,42 @@ let courseListHTML = [
     img: "assets/img/about/html-icon_2.png",
     link: "/html-path",
   },
+   {
+    title: "HTML Елемент Head",
+    des: "Використання елемента head для включення метаданих, стилів, скриптів та інших ресурсів у веб-сторінку.",
+    img: "assets/img/about/html-icon_2.png",
+    link: "/html-head",
+  },
+  {
+    title: "HTML Макети",
+    des: "Створення та організація макетів веб-сторінок з використанням HTML та CSS.",
+    img: "assets/img/about/html-icon_2.png",
+    link: "/html-maket",
+  },
+  {
+    title: "HTML Адаптивний веб-дизайн",
+    des: "Основи створення адаптивного дизайну для веб-сторінок, які коректно відображаються на різних пристроях.",
+    img: "assets/img/about/html-icon_2.png",
+    link: "/html-responsive",
+  },
+  {
+    title: "HTML Сутності",
+    des: "Використання сутностей для відображення спеціальних символів та знаків у HTML-документах.",
+    img: "assets/img/about/html-icon_2.png",
+    link: "/html-sut",
+  },
+  {
+    title: "Використання емодзі в HTML",
+    des: "Вставка та використання емодзі для покращення сприйняття та виразності веб-сторінок.",
+    img: "assets/img/about/html-icon_2.png",
+    link: "/html-emoji",
+  },
+  {
+    title: "HTML URL - Уніфіковані локатори ресурсів",
+    des: "Розуміння та використання URL для посилань на різні ресурси в HTML-документах.",
+    img: "assets/img/about/html-icon_2.png",
+    link: "/html-url",
+  },
 ];
 
 export default courseListHTML;
