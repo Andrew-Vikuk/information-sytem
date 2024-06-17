@@ -39,6 +39,9 @@ import CourseSingleCss9 from "./pages/CourseSingleCss9";
 import CourseSingleCss10 from "./pages/CourseSingleCss10";
 import CourseSingleCss11 from "./pages/CourseSingleCss11";
 import CourseSingleCss12 from "./pages/CourseSingleCss12";
+import CourseSingleCss13 from "./pages/CourseSingleCss13";
+import CourseSingleCss14 from "./pages/CourseSingleCss14";
+
 
 import CourseSingleReact1 from "./pages/CourseSingleReact1";
 import CourseSingleReact2 from "./pages/CourseSingleReact2";
@@ -127,6 +130,10 @@ function App() {
         <Route exact path='/css-margin' element={<CourseSingleCss10 />} />
         <Route exact path='/css-padding' element={<CourseSingleCss11 />} />
         <Route exact path='/css-hw' element={<CourseSingleCss12 />} />
+        <Route exact path='/css-overflow' element={<CourseSingleCss13 />} />
+        <Route exact path='/css-float' element={<CourseSingleCss14 />} />
+
+
 
 
 

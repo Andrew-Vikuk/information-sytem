@@ -71,6 +71,18 @@ let courseListCSS = [
     img: "assets/img/about/css-icon_1.png",
     link: "/css-animations",
   },
+  {
+    title: "CSS Макет - Overflow",
+    des: "Використання властивості overflow у CSS дозволяє контролювати розмір контенту в області з обмеженими розмірами, що дозволяє ефективно управляти вмістом на веб-сайті.",
+    img: "assets/img/about/css-icon_1.png",
+    link: "/css-overflow",
+  },
+  {
+    title: "CSS Макет - float и clear",
+    des: "Використання властивостей float і clear у CSS дозволяє створювати складні макети, в яких елементи можуть вирівнюватись по лівому або правому краю.",
+    img: "assets/img/about/css-icon_1.png",
+    link: "/css-float",
+  },
 ];
 
 export default courseListCSS;

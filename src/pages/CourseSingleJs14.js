@@ -2,19 +2,19 @@ import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import CourseJs13 from "../components/Courses/JS/CourseJs13";
+import CourseJs14 from "../components/Courses/JS/CourseJs14";
 
-const CourseSingleJs13 = () => {
+const CourseSingleJs14 = () => {
   return (
     <>
       {/* Navigation Bar */}
       <NavBar />
 
       {/* Navigation Bar */}
-      <Breadcrumb title={"CSS Макет - Overflow"} />
+      <Breadcrumb title={"CSS Макет - float и clear"} />
 
       {/* Course Page */}
-      <CourseJs13/>
+      <CourseJs14/>
 
       {/* Footer */}
       <Footer />
@@ -22,4 +22,4 @@ const CourseSingleJs13 = () => {
   );
 };
 
-export default CourseSingleJs13;
+export default CourseSingleJs14;
