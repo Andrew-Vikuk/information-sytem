@@ -119,7 +119,7 @@ const CourseHtml17 = () => {
         Використання цього атрибута у <code>&lt;head&gt;</code> вашого HTML документа допомагає уникнути проблем з відображенням символів.
       </p>
 
-      <h4>Accordion: Детальніше про використання емодзі</h4>
+      <h4>Детальніше про використання емодзі</h4>
       <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='accordionHtmlEmojis'>
         <div className='accordion-item'>
           <h2 className='accordion-header' id='headingHtmlEmojis1'>

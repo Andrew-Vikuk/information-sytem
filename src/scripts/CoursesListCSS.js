@@ -83,6 +83,30 @@ let courseListCSS = [
     img: "assets/img/about/css-icon_1.png",
     link: "/css-float",
   },
+  {
+    title: "Горизонтальне & Вертикальне вирівнювання",
+    des: "Використання властивостей float і clear у CSS дозволяє створювати складні макети, в яких елементи можуть вирівнюватись по лівому або правому краю.",
+    img: "assets/img/about/css-icon_1.png",
+    link: "/css-align",
+  },
+  {
+    title: "CSS Комбінатори",
+    des: "Використання властивостей float і clear у CSS дозволяє створювати складні макети, в яких елементи можуть вирівнюватись по лівому або правому краю.",
+    img: "assets/img/about/css-icon_1.png",
+    link: "/css-combinators",
+  },
+  {
+    title: "CSS Псевдо-класси",
+    des: "Використання властивостей float і clear у CSS дозволяє створювати складні макети, в яких елементи можуть вирівнюватись по лівому або правому краю.",
+    img: "assets/img/about/css-icon_1.png",
+    link: "/css-pseudo",
+  },
+  {
+    title: "CSS Псевдо-елементи",
+    des: "Використання властивостей float і clear у CSS дозволяє створювати складні макети, в яких елементи можуть вирівнюватись по лівому або правому краю.",
+    img: "assets/img/about/css-icon_1.png",
+    link: "/css-pseudo-elements",
+  },
 ];
 
 export default courseListCSS;

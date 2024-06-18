@@ -115,7 +115,7 @@ const CourseHtml17 = () => {
         </code>
       </pre>
 
-      <h4>Accordion: Деталі про URL</h4>
+      <h4>Деталі про URL</h4>
       <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='accordionHtmlUrls'>
         <div className='accordion-item'>
           <h2 className='accordion-header' id='headingHtmlUrls1'>

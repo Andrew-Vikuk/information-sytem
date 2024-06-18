@@ -41,6 +41,10 @@ import CourseSingleCss11 from "./pages/CourseSingleCss11";
 import CourseSingleCss12 from "./pages/CourseSingleCss12";
 import CourseSingleCss13 from "./pages/CourseSingleCss13";
 import CourseSingleCss14 from "./pages/CourseSingleCss14";
+import CourseSingleCss15 from "./pages/CourseSingleCss15";
+import CourseSingleCss16 from "./pages/CourseSingleCss16";
+import CourseSingleCss17 from "./pages/CourseSingleCss17";
+import CourseSingleCss18 from "./pages/CourseSingleCss18";
 
 
 import CourseSingleReact1 from "./pages/CourseSingleReact1";
@@ -132,8 +136,10 @@ function App() {
         <Route exact path='/css-hw' element={<CourseSingleCss12 />} />
         <Route exact path='/css-overflow' element={<CourseSingleCss13 />} />
         <Route exact path='/css-float' element={<CourseSingleCss14 />} />
-
-
+        <Route exact path='/css-align' element={<CourseSingleCss15 />} />
+        <Route exact path='/css-combinators' element={<CourseSingleCss16 />} />
+        <Route exact path='/css-pseudo' element={<CourseSingleCss17 />} />
+        <Route exact path='/css-pseudo-elements' element={<CourseSingleCss18 />} />
 
 
 

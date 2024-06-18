@@ -134,7 +134,7 @@ const CourseCss13 = () => {
         </code>
       </pre>
 
-      <h4>Accordion: Деталі про Overflow</h4>
+      <h4>Деталі про Overflow</h4>
       <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='accordionCssOverflow'>
         <div className='accordion-item'>
           <h2 className='accordion-header' id='headingCssOverflow1'>

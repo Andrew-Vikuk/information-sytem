@@ -110,7 +110,7 @@ const CourseHtml16 = () => {
         Ці комбінації можуть бути корисними для відображення тексту на різних мовах, які використовують діакритичні знаки.
       </p>
 
-      <h4>Accordion: Детальніше про HTML сутності</h4>
+      <h4>Детальніше про HTML сутності</h4>
       <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='accordionHtmlEntities'>
         <div className='accordion-item'>
           <h2 className='accordion-header' id='headingHtmlEntities1'>

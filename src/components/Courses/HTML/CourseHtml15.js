@@ -122,7 +122,7 @@ const CourseHtml15 = () => {
         </code>
       </pre>
 
-      <h4>Accordion: Детальніше про адаптивний веб-дизайн</h4>
+      <h4>Детальніше про адаптивний веб-дизайн</h4>
       <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='accordionHtmlResponsive'>
         <div className='accordion-item'>
           <h2 className='accordion-header' id='headingHtmlResponsive1'>

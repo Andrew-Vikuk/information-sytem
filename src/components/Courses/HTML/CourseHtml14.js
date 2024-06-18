@@ -109,7 +109,7 @@ const CourseHtml14 = () => {
         Вибір методу розміщення залежить від ваших потреб. Flexbox підходить для простих макетів з одновимірними розташуваннями (по осі X або Y), в той час як Grid краще підходить для складніших двовимірних макетів. Таблиці варто використовувати для табличних даних, а float - для простих макетів, хоча останніми роками їх використання значно зменшилось на користь flexbox та grid.
       </p>
 
-      <h4>Accordion: Детальніше про макети</h4>
+      <h4>Детальніше про макети</h4>
       <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='accordionHtmlLayouts'>
         <div className='accordion-item'>
           <h2 className='accordion-header' id='headingHtmlLayouts1'>

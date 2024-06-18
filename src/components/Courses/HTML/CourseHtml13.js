@@ -136,7 +136,7 @@ const CourseHtml13 = () => {
         </code>
       </pre>
 
-      <h4>Accordion: Детальніше про метадані</h4>
+      <h4>Детальніше про метадані</h4>
       <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='accordionHtmlHead'>
         <div className='accordion-item'>
           <h2 className='accordion-header' id='headingHtmlHead1'>
