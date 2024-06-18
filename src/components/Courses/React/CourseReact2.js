@@ -93,6 +93,24 @@ const CourseReact2 = () => {
       </ul>
     </li>
   </ol>
+<h4>Оновлення Node.js та npm</h4>
+<p> Якщо у вас уже встановлений Node.js та npm, щоб оновити Node.js, можна скористатися менеджером версій Node (nvm):</p>
+<pre>
+  <code>
+    nvm install node
+  </code>
+</pre>
+<pre>
+  <code>
+    nvm use node
+  </code>
+</pre>
+<p>Щоб оновити npm до останньої версії:</p>
+<pre>
+  <code>
+    npm install -g npm
+  </code>
+</pre>
 
 <h4>Створення нового проекту за допомогою Create React App</h4>
 <ol>
@@ -213,6 +231,15 @@ const CourseReact2 = () => {
   </li>
 </ul>
 <p>Тепер ви готові розпочати розробку свого додатку на React!</p>
+<h4>Корисні посилання, інструменти та плагіни:</h4>
+<ul>
+  <li><a href="https://react.dev/" target="_blank">Офіційна документація React</a></li>
+  <li><a href="https://nodejs.org/en/docs/" target="_blank">Офіційна документація Node.js</a></li>
+  <li><a href="https://docs.npmjs.com/" target="_blank">Документація npm</a></li>
+  <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> - популярний редактор коду з багатьма розширеннями для React.</li>
+  <li><a href="https://prettier.io/" target="_blank">Prettier</a> - автоматичне форматування коду.</li>
+  <li><a href="https://eslint.org/" target="_blank">ESLint</a> - інструмент для аналізу коду на наявність помилок.</li>
+</ul>
 <h4>Довідка</h4>
 <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='reactAccordion'>
 <div className='accordion-item'>

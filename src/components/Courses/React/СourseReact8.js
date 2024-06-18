@@ -134,6 +134,43 @@ const CourseReact8 = () => {
                             <p>
                                 У цьому прикладі значення інпуту отримується через реф при відправленні форми.
                             </p>
+                             <h4>Приклад з використанням хуків</h4>
+    <p>
+        Використання хуків в функціональних компонентах для керування станом форми.
+    </p>
+    <pre>
+        <code>
+{`import React, { useState } from 'react';
+
+function ControlledForm() {
+  const [name, setName] = useState('');
+
+  const handleChange = (event) => {
+    setName(event.target.value);
+  }
+
+  const handleSubmit = (event) => {
+    alert('A name was submitted: ' + name);
+    event.preventDefault();
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
+        <input type="text" value={name} onChange={handleChange} />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+
+export default ControlledForm;`}
+        </code>
+    </pre>
+    <p>
+        У цьому прикладі використовується хук <code>useState</code> для керування станом форми в функціональному компоненті.
+    </p>
 
                             <h4>Використання бібліотеки Formik</h4>
                             <p>

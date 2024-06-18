@@ -108,6 +108,26 @@ function StyledComponent() {
 }`}
                                 </code>
                             </pre>
+                            <h4>CSS-in-JS з Emotion</h4>
+    <p>
+        Emotion - це ще одна популярна бібліотека для написання CSS в JavaScript, яка дозволяє використовувати стилі як у стилізованих компонентах, так і у CSS-об'єктах.
+    </p>
+    <pre>
+        <code>
+{`/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
+
+const divStyle = css\`
+  color: blue;
+  background-color: lightgray;
+\`;
+
+function StyledComponent() {
+  return <div css={divStyle}>Це компонент з Emotion.</div>;
+}`}
+        </code>
+    </pre>
+
 
                             <h4>Бібліотеки для стилизації</h4>
                             <p>
@@ -143,6 +163,91 @@ function StyledComponent() {
 }`}
                                 </code>
                             </pre>
+                             <h4>Глобальні стилі</h4>
+    <p>
+        Глобальні стилі можна застосовувати в React за допомогою styled-components або CSS-модулів. Вони дозволяють задавати стилі, які будуть застосовуватись до всього додатка.
+    </p>
+    <pre>
+        <code>
+{`import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle\`
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+\`;
+
+function App() {
+  return (
+    <>
+      <GlobalStyle />
+      <StyledComponent />
+    </>
+  );
+}`}
+        </code>
+    </pre>
+
+    <h4>Динамічні стилі</h4>
+    <p>
+        В React можна динамічно змінювати стилі компонентів залежно від стану.
+    </p>
+    <pre>
+        <code>
+{`class DynamicStyledComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isActive: false };
+  }
+
+  toggleActive = () => {
+    this.setState(state => ({ isActive: !state.isActive }));
+  }
+
+  render() {
+    const divStyle = {
+      color: this.state.isActive ? 'red' : 'blue',
+      backgroundColor: 'lightgray'
+    };
+
+    return (
+      <div style={divStyle} onClick={this.toggleActive}>
+        Натисніть на мене, щоб змінити стиль.
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<DynamicStyledComponent />, document.getElementById('root'));`}
+        </code>
+    </pre>
+
+    <h4>Responsive дизайн</h4>
+    <p>
+        Створення адаптивного дизайну можна досягти за допомогою медіа-запитів у CSS або за допомогою styled-components.
+    </p>
+    <pre>
+        <code>
+{`import styled from 'styled-components';
+
+const ResponsiveDiv = styled.div\`
+  background-color: lightgray;
+  color: blue;
+
+  @media (max-width: 600px) {
+    background-color: pink;
+  }
+\`;
+
+function StyledComponent() {
+  return <ResponsiveDiv>Це адаптивний компонент.</ResponsiveDiv>;
+}
+
+ReactDOM.render(<StyledComponent />, document.getElementById('root'));`}
+        </code>
+    </pre>
 
                             <h4>Довідка</h4>
                             <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='stylingAccordion'>
