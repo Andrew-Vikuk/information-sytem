@@ -22,11 +22,6 @@ const FaqAreaOne = () => {
                   src='assets/img/about/faqs_1.png'
                   alt='img'
                 />
-                {/* <img    10000 happy clients
-                  className='animate-img-bottom-right top_image_bounce'
-                  src='assets/img/about/5.png'
-                  alt='img'
-                /> */}
               </div>
             </div>
             <div
