@@ -5,8 +5,6 @@ import {
 import { HashLink as Link } from 'react-router-hash-link';
 import courseListJs from "../../../scripts/CoursesListJs";
 import { NavLink } from "react-router-dom";
-
-
 const CourseJs11 = () => {
   return (
     <>

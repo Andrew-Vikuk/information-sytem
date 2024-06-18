@@ -19,7 +19,7 @@ const ContactMain = () => {
           form.current.reset();
         },
         (error) => {
-            toast.success("Сталася помилка при відправці повідомленян!");
+            toast.error("Сталася помилка при відправці повідомленян!");
         }
       );
   };

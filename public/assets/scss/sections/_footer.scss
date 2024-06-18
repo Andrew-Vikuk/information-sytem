@@ -18,7 +18,7 @@
   .widget {
     position: relative;
     z-index: 2;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
   .widget-title {
     margin-bottom: 30px;
@@ -26,10 +26,9 @@
   }
   .widget_about {
     .thumb {
-      margin-bottom: 0px;
+      margin-bottom: 20px;
       img {
         max-width: 150px;
-        width: 80px;
       }
     }
     .details {
@@ -56,7 +55,6 @@
     }
     
   }
-
   .widget_nav_menu {
     ul {
       margin: 0;

@@ -58,6 +58,17 @@ const CourseReact12 = () => {
                             <p>
                                 Context API в React дозволяє передавати дані через дерево компонентів без необхідності пропускати пропси на кожному рівні. Це особливо корисно для глобальних даних, таких як тема, авторизація користувача або поточна мова інтерфейсу.
                             </p>
+                            <h6>Переваги та недоліки Context API</h6>
+                            <ul>
+                              <p>Переваги:</p>
+                              <li>Зменшення "пробросу" пропсів.</li>
+                              <li>Простота налаштування та використання.</li>
+                              
+                              <br></br><p>Недоліки:</p>
+                              <li>Можливе зниження продуктивності при частих змінах стану.</li>
+                              <li>Ускладнення структури додатка при великій кількості контекстів.</li>
+
+                            </ul>
 
                             <h4>Створення та використання контексту</h4>
                             <p>
@@ -103,6 +114,127 @@ function MyComponent() {
                                 У цьому прикладі ми створюємо контекст <code>MyContext</code> і використовуємо <code>MyProvider</code> для надання значення <code>value</code> і функції <code>setValue</code> усім дочірнім компонентам.
                             </p>
 
+<p>Приклад використання декількох контекстів</p>
+<pre>
+  <code>
+    {`
+import React, { createContext, useContext, useState } from 'react';
+
+// Створюємо два контексти
+const ThemeContext = createContext();
+const UserContext = createContext();
+
+function App() {
+  // Створюємо стан для теми з початковим значенням 'light'
+  const [theme, setTheme] = useState('light');
+  // Створюємо стан для користувача з початковим значенням { name: 'John Doe' }
+  const [user, setUser] = useState({ name: 'John Doe' });
+
+  return (
+    // Забезпечуємо компоненти темою і функцією для зміни теми
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      {/* Забезпечуємо компоненти користувачем і функцією для зміни користувача */}
+      <UserContext.Provider value={{ user, setUser }}>
+        <Toolbar />
+      </UserContext.Provider>
+    </ThemeContext.Provider>
+  );
+}
+
+function Toolbar() {
+  return (
+    <div>
+      {/* Компонент для перемикання теми */}
+      <ThemeToggler />
+      {/* Компонент для відображення інформації про користувача */}
+      <UserInfo />
+    </div>
+  );
+}
+
+function ThemeToggler() {
+  // Використовуємо useContext для доступу до теми і функції для зміни теми
+  const { theme, setTheme } = useContext(ThemeContext);
+
+  return (
+    // Кнопка для перемикання теми між 'light' і 'dark'
+    <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+      Toggle Theme
+    </button>
+  );
+}
+
+function UserInfo() {
+  // Використовуємо useContext для доступу до інформації про користувача
+  const { user } = useContext(UserContext);
+
+  return (
+    // Відображаємо ім'я користувача
+    <div>{user.name}</div>
+  );
+}
+
+    `}
+  </code>
+</pre>
+<p>Використання useReducer з Context API</p>
+<pre>
+  <code>
+    {`
+import React, { createContext, useContext, useReducer } from 'react';
+
+// Початковий стан лічильника
+const initialState = { count: 0 };
+
+// Ред'юсер функція для оновлення стану
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      // Збільшуємо значення лічильника на 1
+      return { count: state.count + 1 };
+    case 'decrement':
+      // Зменшуємо значення лічильника на 1
+      return { count: state.count - 1 };
+    default:
+      // У випадку невідомої дії кидаємо помилку
+      throw new Error();
+  }
+}
+
+// Створюємо контекст для лічильника
+const CountContext = createContext();
+
+function App() {
+  // Використовуємо useReducer для управління станом лічильника
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  return (
+    // Надання значення стану та функції dispatch через контекст
+    <CountContext.Provider value={{ state, dispatch }}>
+      <Counter />
+    </CountContext.Provider>
+  );
+}
+
+function Counter() {
+  // Використовуємо useContext для доступу до стану та dispatch з CountContext
+  const { state, dispatch } = useContext(CountContext);
+
+  return (
+    <div>
+      {/* Відображаємо поточне значення лічильника */}
+      <p>Count: {state.count}</p>
+      {/* Кнопка для збільшення лічильника */}
+      <button onClick={() => dispatch({ type: 'increment' })}>Increment</button>
+      {/* Кнопка для зменшення лічильника */}
+      <button onClick={() => dispatch({ type: 'decrement' })}>Decrement</button>
+    </div>
+  );
+}
+
+    `}
+  </code>
+</pre>
                             <h4>Споживання контексту</h4>
                             <p>
                                 Споживання контексту можна виконати за допомогою хука <code>useContext</code> або компонента <code>Context.Consumer</code>.

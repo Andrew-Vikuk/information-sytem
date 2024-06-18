@@ -3,16 +3,10 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [active, setActive] = useState(false);
-  const [searchShow, setSearchShow] = useState(false);
   const menuActive = () => {
     setActive(!active);
   };
-  const searchActive = () => {
-    setSearchShow(!searchShow);
-    console.log("hell");
-  };
-
-  // Control sidebar navigation
+  
   let items = document.querySelectorAll(".menu-item-has-children > a");
   for (let i in items) {
     if (items.hasOwnProperty(i)) {
@@ -27,13 +21,6 @@ const NavBar = () => {
 
   return (
     <>
-      
-      <div
-        onClick={searchActive}
-        className={searchShow ? "body-overlay active" : "body-overlay"}
-        id='body-overlay'
-      ></div>
-      {/* navbar start */}
       <nav className='navbar navbar-area navbar-expand-lg'>
         <div className='container nav-container navbar-bg'>
           <div className='responsive-mobile-menu'>

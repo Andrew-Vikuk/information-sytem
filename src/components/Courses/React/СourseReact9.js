@@ -132,13 +132,40 @@ const CourseReact9 = () => {
                                 У цьому прикладі метод <code>handleClick</code> прив'язується до контексту компонента і параметра <code>'Bob'</code> за допомогою <code>bind</code>.
                             </p>
 
-                            <h4>Приклади використання подій</h4>
-                            <p>
-                                Додаткові приклади обробки подій у React:
-                            </p>
-                            <h5>Обробка події введення тексту</h5>
-                            <pre>
-                                <code>
+                              <h4>Обробка подій у функціональних компонентах</h4>
+    <p>
+        Використання хуків для обробки подій у функціональних компонентах.
+    </p>
+    <pre>
+        <code>
+{`import React, { useState } from 'react';
+
+function EventHandling() {
+  const handleClick = () => {
+    alert('Button clicked!');
+  };
+
+  return (
+    <button onClick={handleClick}>
+      Click Me
+    </button>
+  );
+}
+
+export default EventHandling;`}
+        </code>
+    </pre>
+    <p>
+        У цьому прикладі використовується функціональний компонент та хук <code>useState</code> для обробки події кліку.
+    </p>
+
+    <h4>Приклади використання подій</h4>
+    <p>
+        Додаткові приклади обробки подій у React:
+    </p>
+    <h5>Обробка події введення тексту</h5>
+    <pre>
+        <code>
 {`class TextInput extends React.Component {
   constructor(props) {
     super(props);
@@ -159,11 +186,118 @@ const CourseReact9 = () => {
     );
   }
 }`}
-                                </code>
-                            </pre>
-                            <p>
-                                У цьому прикладі стан компонента оновлюється при кожному введенні тексту в інпут.
-                            </p>
+        </code>
+    </pre>
+    <p>
+        У цьому прикладі стан компонента оновлюється при кожному введенні тексту в інпут.
+    </p>
+
+    <h5>Обробка події введення тексту у функціональних компонентах</h5>
+    <pre>
+        <code>
+{`import React, { useState } from 'react';
+
+function TextInput() {
+  const [value, setValue] = useState('');
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  }
+
+  return (
+    <div>
+      <input type="text" value={value} onChange={handleChange} />
+      <p>Current input: {value}</p>
+    </div>
+  );
+}
+
+export default TextInput;`}
+        </code>
+    </pre>
+    <p>
+        У цьому прикладі використовується функціональний компонент і хук <code>useState</code> для обробки події введення тексту.
+    </p>
+
+    <h5>Обробка події відправлення форми</h5>
+    <pre>
+        <code>
+{`class FormSubmit extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: '' };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+
+  handleSubmit(event) {
+    alert('A value was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Value:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    );
+  }
+}`}
+        </code>
+    </pre>
+    <p>
+        У цьому прикладі обробляється подія відправлення форми, і стан компонента використовується для зберігання введеного значення.
+    </p>
+
+    <h5>Обробка події відправлення форми у функціональних компонентах</h5>
+    <pre>
+        <code>
+{`import React, { useState } from 'react';
+
+function FormSubmit() {
+  const [value, setValue] = useState('');
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  }
+
+  const handleSubmit = (event) => {
+    alert('A value was submitted: ' + value);
+    event.preventDefault();
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Value:
+        <input type="text" value={value} onChange={handleChange} />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+
+export default FormSubmit;`}
+        </code>
+    </pre>
+    <p>
+        У цьому прикладі обробка події відправлення форми реалізована у функціональному компоненті з використанням хуків.
+    </p>
+
+    <h4>Поради щодо обробки подій</h4>
+    <ul>
+        <li>Використовуйте анонімні функції обережно, щоб уникнути зайвих рендерів.</li>
+        <li>При використанні методу <code>bind</code> переконайтеся, що контекст прив'язаний правильно.</li>
+        <li>Обробляйте події форми, такі як <code>submit</code> і <code>focus</code>, для кращого користувацького досвіду.</li>
+    </ul>
 
                             <h4>Довідка</h4>
                             <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='eventsAccordion'>

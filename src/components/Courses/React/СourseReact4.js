@@ -168,7 +168,81 @@ const element = <Welcome name="Іван" />;`}
 }`}
                                 </code>
                             </pre>
+<h4>Контрольовані компоненти</h4>
+<p>Компоненти, у яких значення полів форми контролюються React через стан компонента. Це означає, що значення полів форми відображають стан React і зміни в них відбуваються через обробники подій, які оновлюють стан компонента.</p>
+<pre><code>
+{`
+class ControlledForm extends React.Component {
+  constructor(props) {
+    super(props);
+    // Ініціалізація стану компонента
+    this.state = {
+      inputValue: '' // Початкове значення для текстового поля
+    };
+  }
 
+  // Метод для обробки змін у текстовому полі
+  handleChange = (event) => {
+    // Оновлення стану компонента при зміні значення текстового поля
+    this.setState({ inputValue: event.target.value });
+  }
+
+  // Метод для обробки події відправки форми
+  handleSubmit = (event) => {
+    event.preventDefault(); // Запобігання стандартній поведінці браузера при відправці форми
+    // Виведення значення текстового поля в консоль
+    console.log('Submitted value:', this.state.inputValue);
+  }
+
+  // Метод для відображення компонентів на сторінці
+  render() {
+    return (
+      // Визначення форми з обробником події відправки
+      <form onSubmit={this.handleSubmit}>
+        {/* Визначення текстового поля з прив'язкою до стану */}
+        <input 
+          type="text"
+          value={this.state.inputValue} // Прив'язка значення текстового поля до стану компонента
+          onChange={this.handleChange} // Обробник події зміни значення текстового поля
+        />
+        {/* Кнопка для відправки форми */}
+        <button type="submit">Submit</button>
+      </form>
+    );
+  }
+}
+
+`}  
+</code></pre>               
+<h4>Неконтрольовані компоненти</h4>
+<p>Компоненти, у яких значення полів форми зберігаються в DOM, а не в React. Зазвичай використовуються, коли потрібно мінімізувати контроль над формою або отримати значення після відправки форми.</p>             
+<pre><code>{`
+class UncontrolledForm extends React.Component {
+  // Метод для обробки події відправки форми
+  handleSubmit = (event) => {
+    event.preventDefault(); // Запобігання стандартній поведінці браузера при відправці форми
+    // Виведення значення текстового поля в консоль
+    console.log('Submitted value:', this.input.value);
+  }
+
+  // Метод для відображення компонентів на сторінці
+  render() {
+    return (
+      // Визначення форми з обробником події відправки
+      <form onSubmit={this.handleSubmit}>
+        {/* Визначення текстового поля з прив'язкою через реф */}
+        <input 
+          type="text"
+          ref={(input) => this.input = input} // Використання рефа для доступу до DOM елемента напряму
+        />
+        {/* Кнопка для відправки форми */}
+        <button type="submit">Submit</button>
+      </form>
+    );
+  }
+}
+
+`}</code></pre>
                             <h4>Довідка</h4>
                             <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='componentsAccordion'>
                                 <div className='accordion-item'>

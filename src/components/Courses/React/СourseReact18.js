@@ -56,7 +56,13 @@ const CourseReact18 = () => {
                         <div className='details'>
                             <h3>Тестування у React</h3>
                             <p>Тестування є важливою частиною розробки додатків. У цьому розділі ми розглянемо використання Jest та React Testing Library для тестування компонентів та хуків у React.</p>
-
+ <h4>Теоретичні аспекти тестування у React</h4>
+  <p>При тестуванні React-компонентів важливо враховувати декілька принципів:</p>
+  <ul>
+    <li><b>Тестування поведінки:</b> Замість тестування внутрішньої реалізації компонентів, зосередьтесь на їх поведінці. Це робить ваші тести менш крихкими і більш стійкими до змін.</li>
+    <li><b>Чисті тести:</b> Уникайте тестування сторонніх ефектів і забезпечте, щоб кожен тест був незалежним від інших.</li>
+    <li><b>Актуальність:</b> Регулярно оновлюйте свої тести відповідно до змін у кодовій базі, щоб зберегти їх актуальність.</li>
+  </ul>
                             <h4>Jest та React Testing Library</h4>
                             <p>Jest - це фреймворк для тестування JavaScript-коду, який дозволяє писати як синхронні, так і асинхронні тести. React Testing Library - це набір утиліт для тестування React-компонентів, який зосереджується на інтеграційному підході до тестування.</p>
                             <pre>
@@ -84,26 +90,48 @@ test('renders learn react link', () => {
                                 </code>
                             </pre>
                             <p>У цьому прикладі <code>render</code> використовує React Testing Library для рендерингу компонента, а <code>screen</code> допомагає знайти елемент на сторінці та перевірити його наявність.</p>
-
-                            <h4>Тестування компонентів та хуків</h4>
-                            <p>Тестування компонентів включає перевірку рендерингу, взаємодії з користувачем та стану компонентів. Ось приклад тесту компонента з використанням хуків:</p>
-                            <pre>
-                                <code>
+ 
+  <h4>Практичні приклади</h4>
+  <h5>Тестування асинхронних компонентів</h5>
+  <p>Багато компонентів у React працюють асинхронно, наприклад, завантаження даних з API. Ось приклад тесту для асинхронного компонента:</p>
+  <pre>
+    <code>
 {`import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Counter from './Counter';
-
-test('increments counter', () => {
-  const { getByText } = render(<Counter />);
-  const button = getByText(/increment/i);
-  fireEvent.click(button);
-  const counter = getByText(/count: 1/i);
-  expect(counter).toBeInTheDocument();
+import AsyncComponent from './AsyncComponent';
+test('loads and displays data', async () => {
+render(<AsyncComponent />);
+expect(screen.getByText(/loading/i)).toBeInTheDocument();
+const dataElement = await waitFor(() => screen.getByText(/data loaded/i));
+expect(dataElement).toBeInTheDocument();
 });`}
-                                </code>
-                            </pre>
-                            <p>У цьому прикладі <code>fireEvent</code> використовується для імітації кліку на кнопку, а потім перевіряється, чи оновився лічильник.</p>
+</code>
+</pre>
+
+  <p>У цьому прикладі використовується <code>waitFor</code> для очікування завершення асинхронного процесу.</p>
+                <h5>Тестування хуків</h5>
+  <p>Для тестування користувацьких хуків рекомендується використовувати допоміжні компоненти. Ось приклад тесту для користувацького хука:</p>
+  <pre>
+    <code>
+{`import { renderHook, act } from '@testing-library/react-hooks';
+import useCustomHook from './useCustomHook';
+test('should increment counter', () => {
+const { result } = renderHook(() => useCustomHook());
+act(() => {
+result.current.increment();
+});
+expect(result.current.count).toBe(1);
+});`}
+</code>
+</pre>
+
+  <p>Тут <code>renderHook</code> використовується для рендерингу хука, а <code>act</code> допомагає імітувати зміни стану.</p>
+  <h4>Ресурси для подальшого вивчення</h4>
+  <ul>
+    <li><a href="https://jestjs.io/" target="_blank">Офіційний сайт Jest</a></li>
+    <li><a href="https://testing-library.com/docs/react-testing-library/intro/" target="_blank">Документація React Testing Library</a></li>
+  </ul>
 
                             <h4>Довідка</h4>
                             <div className='accordion accordion-inner accordion-icon-left mt-3 mb-4' id='testingAccordion'>
