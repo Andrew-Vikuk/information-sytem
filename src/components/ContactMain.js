@@ -109,7 +109,7 @@ const ContactMain = () => {
                 </div>
                 <div className='media-body'>
                   <h5>Телефон</h5>
-                  <h6>88 01234 2345 12</h6>
+                  <h6>+38 (0312) 65-52-50</h6>
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ const ContactMain = () => {
                 </div>
                 <div className='media-body'>
                   <h5>Наш Email</h5>
-                  <h6>Comism@mail.com</h6>
+                  <h6>kaf-iust@uzhnu.edu.ua</h6>
                 </div>
               </div>
             </div>

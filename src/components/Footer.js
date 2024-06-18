@@ -67,10 +67,10 @@ const Footer = () => {
             <div className='details'>
             <h4 className='widget-title'>Контакти</h4>
                   <p className='mt-3'>
-                    <FaPhoneAlt /> (+380) 123 456 765
+                    <FaPhoneAlt /> +38 (0312) 65-52-50
                   </p>
                   <p className='mt-2'>
-                    <FaEnvelope /> mail@gmail.com
+                    <FaEnvelope /> kaf-iust@uzhnu.edu.ua
                   </p>
                 </div>
             </div>
