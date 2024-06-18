@@ -154,7 +154,7 @@ function App() {
         <Route exact path='/js-contex' element={<CourseSingleJs8 />} />
         <Route exact path='/js-imitation' element={<CourseSingleJs9 />} />
         <Route exact path='/js-classes' element={<CourseSingleJs10 />} />
-        <Route exact path='/js-calback' element={<CourseSingleJs11 />} />
+        <Route exact path='/js-callback' element={<CourseSingleJs11 />} />
         <Route exact path='/js-promise' element={<CourseSingleJs12 />} />
         <Route exact path='/js-async' element={<CourseSingleJs13 />} />
 
