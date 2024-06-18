@@ -1,0 +1,116 @@
+/*--------------------------------------------------
+    ##Footer style
+---------------------------------------------------*/
+.footer-area {
+  position: relative;
+  margin-top: 90px;
+  padding-top: 50px;
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: var(--heading-color);
+    z-index: -1;
+  }
+  .widget {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 70px;
+  }
+  .widget-title {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .widget_about {
+    .thumb {
+      margin-bottom: 20px;
+      img {
+        max-width: 150px;
+      }
+    }
+    .details {
+      p {
+        margin-bottom: 0;
+        color: #fff;
+        svg {
+          color: var(--main-color);
+          margin-right: 10px;
+        }
+        + p {
+          font-weight: 500;
+        }
+      }
+      .social-media {
+        margin-top: 26px;
+        li {
+          a:hover {
+            background: var(--main-color);
+            color: #fff;
+          }
+        }
+      }
+    }
+    
+  }
+  .widget_nav_menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin-bottom: 7px;
+        position: relative;
+        color: #fff;
+        position: relative;
+        svg {
+          margin-right: 8px;
+          color: #333f4d;
+          transition: 0.4s;
+        }
+        &:hover {
+          svg {
+            color: var(--main-color);
+          }
+        }
+        &.sky {
+          &:hover {
+            svg {
+              color: #50af9b;
+            }
+            a {
+              color: #50af9b;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+}
+
+.footer-top {
+  padding-top: 55px;
+  padding-bottom: 90px;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 23px 0;
+  position: relative;
+  z-index: 2;
+  p {
+    margin-bottom: 0;
+    color: #fff;
+  }
+  a {
+    margin-right: 10px;
+    color: #fff;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+

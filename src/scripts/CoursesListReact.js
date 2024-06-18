@@ -1,0 +1,142 @@
+let courseListReact = [
+  {
+    title: "Вступ до ReactJS",
+    des: "ReactJS - це бібліотека JavaScript для побудови інтерфейсів користувача, яка дозволяє створювати змінні та переважно динамічні UI-компоненти.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-basics",
+  },
+  {
+    title: "Початок роботи з ReactJS",
+    des: "Щоб розпочати розробку проекту на React, необхідно встановити Node.js та npm, створити новий проект за допомогою Create React App і зрозуміти структуру проекту.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-start",
+  },
+  {
+    title: "Основи: JSX",
+    des: "JSX (JavaScript XML) – це синтаксичне розширення для JavaScript, яке дозволяє використовувати HTML-подібний синтаксис всередині JavaScript коду.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-start-jsx",
+  },
+    {
+    title: "Основи: Компоненти",
+    des: "Компоненти є основними будівельними блоками React додатків. Вони дозволяють розбивати інтерфейс на незалежні, повторно використовувані частини, що спрощує розробку та підтримку коду.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-start-components",
+  },
+    {
+    title: "Основи: Стилізація компонентів",
+    des: "Стилизація компонентів є важливим аспектом розробки користувацьких інтерфейсів. В React існує кілька підходів до стилизації, кожен з яких має свої переваги та недоліки.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-start-components-style",
+  },
+    {
+    title: "Просунуті концепції: Композиція та наслідування",
+    des: "React пропонує ряд просунутих концепцій, що дозволяють ефективно керувати складними інтерфейсами. Композиція, декомпозиція компонентів, рендер-пропси.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-start-сomposition",
+  },
+    {
+    title: "Просунуті концепції: Списки та ключі",
+    des: "В React часто доводиться працювати зі списками даних. Правильне рендерування списків і використання ключів важливе для ефективності і коректної роботи додатку.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-start-lists",
+  },
+   {
+    title: "Просунуті концепції: Форми та керування станом форм",
+    des: "Форми є важливим компонентом більшості веб-додатків. У React ми можемо керувати станом форм за допомогою керованих та некерованих компонентів. ",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-start-forms",
+  },
+   {
+    title: "Просунуті концепції: Обробка подій",
+    des: "У React події працюють подібно до DOM-елементів. Ми розглянемо, як додавати події до елементів і передавати параметри в обробники подій.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-start-events",
+  },
+     {
+    title: "Хуки: Основні хуки",
+    des: "Хуки (hooks) в React дозволяють використовувати стан і інші можливості React без написання класів. Давайте розглянемо, як вони працюють і як їх використовувати.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-hooks-basics",
+  },
+  {
+    title: "Хуки: Додаткові хуки",
+    des: "Окрім основних хуків useState та useEffect, React також пропонує додаткові хуки, які допомагають вирішувати більш специфічні задачі. У цьому розділі ми з ними познайомимося.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-hooks-additional",
+  },
+  {
+    title: "Керування станом: Контекст (Context API)",
+    des: "Context API в React дозволяє передавати дані через дерево компонентів без необхідності пропускати пропси на кожному рівні.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-state-context",
+  },
+  {
+    title: "Керування станом: Менеджери стану",
+    des: "Менеджери стану допомагають керувати станом у великих додатках, роблячи його передбачуваним і полегшуючи роботу з ним. У цьому розділі ми розглянемо чотири популярні менеджери стану.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-state-manager",
+  },
+  {
+    title: "Робота з сервером: Запити до API",
+    des: "Запити до API дозволяють взаємодіяти з сервером для отримання, надсилання, оновлення або видалення даних.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-server-request",
+  },
+   {
+    title: "Робота з сервером: Аутентифікація та авторизація",
+    des: "Аутентифікація та авторизація є важливими аспектами забезпечення безпеки у веб-додатках. У цьому розділі ми розглянемо роботу з токенами та реалізацію приватних маршрутів",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-server-authentication",
+  },
+   {
+    title: "Маршрутизація: React Router",
+    des: "React Router - це стандартна бібліотека для маршрутизації у React-додатках.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-router",
+  },
+   {
+    title: "Оптимізація: Продуктивність",
+    des: "Для забезпечення високої продуктивності та оптимальної роботи React-додатків важливо застосовувати різні техніки оптимізації.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-optimization-productivity",
+  },
+  {
+    title: "Оптимізація: Тестування",
+    des: "Тестування є важливою частиною розробки додатків. У цьому розділі ми розглянемо використання Jest та React Testing Library",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-optimization-testing",
+  },
+  {
+    title: "Завершальні кроки: Збірка та деплой",
+    des: "Завершення розробки вашого React-додатку включає підготовку до продакшену та деплой на обрану платформу.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-deployment",
+  },
+  {
+    title: "Завершальні кроки: Найкращі практики",
+    des: "Дотримання найкращих практик при розробці на React допоможе вам створювати більш надійні та підтримувані додатки.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-best-practices",
+  },
+  {
+    title: "Додатково: SSR та SSG",
+    des: "Коли ми говоримо про рендеринг на React, ми маємо кілька підходів.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-ssr-ssg",
+  },
+    {
+    title: "Додатково: Анімації",
+    des: "Анімації додають інтерактивність та динаміку до вашого додатку. У цьому розділі ми розглянемо дві популярні бібліотеки для створення анімацій.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-animation",
+  },
+    {
+    title: "Додатково: GraphQL",
+    des: "GraphQL - це мова запитів для API та середовище виконання для виконання цих запитів з вашими даними.",
+    img: "assets/img/about/react-icon_2.png",
+    link: "/react-graphl",
+  },
+];
+
+export default courseListReact;
