@@ -2,9 +2,9 @@ import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import CourseJs1 from "../components/Courses/JS/CourseJs1";
+import CourseJs5 from "../components/Courses/JS/CourseJs5";
 
-const CourseSingleJs1 = () => {
+const CourseSingleJs5 = () => {
   return (
     <>
       {/* Navigation Bar */}
@@ -14,7 +14,7 @@ const CourseSingleJs1 = () => {
       <Breadcrumb title={"Об'єкти та масиви"} />
 
       {/* Course Page */}
-      <CourseJs1/>
+      <CourseJs5/>
 
       {/* Footer */}
       <Footer />
@@ -22,4 +22,4 @@ const CourseSingleJs1 = () => {
   );
 };
 
-export default CourseSingleJs1;
+export default CourseSingleJs5;
